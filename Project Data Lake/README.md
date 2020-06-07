@@ -1,6 +1,6 @@
-#Project: Data Lake
+# Project: Data Lake
 
-##Introduction
+## Introduction
 A music streaming startup, Sparkify, has grown their user base and song database even more and want to move their data warehouse to a data lake. Their data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
 As their data engineer, you are tasked with building an ETL pipeline that extracts their data from S3, processes them using Spark, and loads the data back into S3 as a set of dimensional tables. This will allow their analytics team to continue finding insights in what songs their users are listening to.
@@ -14,7 +14,7 @@ In this project, you'll apply what you've learned on Spark and data lakes to bui
 Song data: s3://udacity-dend/song_data
 Log data: s3://udacity-dend/log_data
 
-##Schema for Song Play Analysis
+## Schema for Song Play Analysis
 Fact Table
 songplays - records in log data associated with song plays i.e. records with page NextSong
 songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
@@ -29,7 +29,7 @@ artist_id, name, location, lattitude, longitude
 time - timestamps of records in songplays broken down into specific units
 start_time, hour, day, week, month, year, weekday
 
-##Files
+## Files
 etl.py - reads data from S3, processes that data using Spark, and writes them back to S3
 dl.cfg - contains your AWS credentials
 README.md - provides discussion on your process and decisions
